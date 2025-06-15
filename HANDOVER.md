@@ -18,14 +18,21 @@
    - ✅ Practice 2-1: 手動實作卷積
    - ✅ Practice 2-2: 矩陣乘法卷積
    - ✅ Practice 3-1: DTFT 實作
+   - ✅ Practice 3-2: DFT 點數比較
+   - ✅ Practice 3-3: FFT 實作
+   - ✅ Practice 3-4: 雙頻訊號 FFT
+   - ✅ Practice 3-5: 混疊效應
+   - ✅ Practice 3-6: 圓形卷積
+   - ✅ Practice 4-1: 濾波與卷積比較
+   - ✅ Practice 4-2: 補償系統設計
 
 ### 待完成工作
-需要在 README.md 中繼續撰寫剩餘 10 個練習的心得：
-- Practice 3-2, 3-3, 3-4, 3-5, 3-6
-- Practice 4-1, 4-2
-- Practice 5-1, 5-2, 5-3
-- Practice 6-1
-- Practice 7-1
+需要在 README.md 中繼續撰寫剩餘 3 個練習的心得：
+- Practice 5-1: 升降取樣
+- Practice 5-2: 音樂生成
+- Practice 5-3: 消除人聲
+- Practice 6-1: Chebyshev 濾波器
+- Practice 7-1: 移動平均濾波器
 
 ## 工作指引
 
@@ -126,9 +133,9 @@
 
 ## 開始工作
 
-請從 Practice 3-2 開始，依序完成每個練習的心得。記得每個心得都要展現出對該 DSP 概念的深入理解。
+請從 Practice 5-1 開始，依序完成每個練習的心得。記得每個心得都要展現出對該 DSP 概念的深入理解。
 
-**重要提醒**：目前已完成到 Practice 3-1，請從 Practice 3-2 繼續撰寫。
+**重要提醒**：目前已完成到 Practice 4-2（共完成 12/15），請從 Practice 5-1 繼續撰寫最後 5 個練習。
 
 祝你順利完成任務！如果遇到任何問題，可以參考已完成的範例或查看原始程式碼中的註解。
 
