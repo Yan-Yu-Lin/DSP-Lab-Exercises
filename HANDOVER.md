@@ -12,12 +12,16 @@
 1. ✅ 所有 15 個練習的 Python 程式碼實作（practice_1_2.py 到 practice_7_1.py）
 2. ✅ 所有練習的執行結果截圖（在 image/ 資料夾）
 3. ✅ GitHub repository 建立並設為 public
-4. ✅ README.md 已開始撰寫，完成了 Practice 1-2 和 1-3 的心得
+4. ✅ README.md 心得撰寫進度：
+   - ✅ Practice 1-2: 離散 Sinc 函數
+   - ✅ Practice 1-3: 雙頻訊號取樣
+   - ✅ Practice 2-1: 手動實作卷積
+   - ✅ Practice 2-2: 矩陣乘法卷積
+   - ✅ Practice 3-1: DTFT 實作
 
 ### 待完成工作
-需要在 README.md 中繼續撰寫剩餘 13 個練習的心得：
-- Practice 2-1, 2-2
-- Practice 3-1, 3-2, 3-3, 3-4, 3-5, 3-6
+需要在 README.md 中繼續撰寫剩餘 10 個練習的心得：
+- Practice 3-2, 3-3, 3-4, 3-5, 3-6
 - Practice 4-1, 4-2
 - Practice 5-1, 5-2, 5-3
 - Practice 6-1
@@ -122,7 +126,9 @@
 
 ## 開始工作
 
-請從 Practice 2-1 開始，依序完成每個練習的心得。記得每個心得都要展現出對該 DSP 概念的深入理解。
+請從 Practice 3-2 開始，依序完成每個練習的心得。記得每個心得都要展現出對該 DSP 概念的深入理解。
+
+**重要提醒**：目前已完成到 Practice 3-1，請從 Practice 3-2 繼續撰寫。
 
 祝你順利完成任務！如果遇到任何問題，可以參考已完成的範例或查看原始程式碼中的註解。
 
