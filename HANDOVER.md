@@ -1,179 +1,145 @@
-# DSP Lab Exercises Handover Document
+# DSP Lab 心得撰寫交接文件
 
-## Project Overview
+## 任務概述
 
-Arthur (林晏宇) needs to complete DSP (Digital Signal Processing) lab exercises and generate 心得 (reflections) for his Thursday report. Each practice problem needs to be implemented as a self-contained Python file that another Claude instance can read to understand the problem and generate thoughtful reflections.
+你好！你被召喚來完成林晏宇（Arthur）的數位訊號處理實習心得報告。這份報告需要在週四前完成，目前已完成 2/15 個練習的心得撰寫。
 
-**Deadline**: Thursday (part of ~30 reflections needed)
-**Course**: 數位訊號實習 (Digital Signal Processing Lab)
+**GitHub Repository**: https://github.com/Yan-Yu-Lin/DSP-Lab-Exercises
 
-## Critical Requirements for Each Practice File
+## 當前狀態
 
-Each Python file MUST contain:
+### 已完成工作
+1. ✅ 所有 15 個練習的 Python 程式碼實作（practice_1_2.py 到 practice_7_1.py）
+2. ✅ 所有練習的執行結果截圖（在 image/ 資料夾）
+3. ✅ GitHub repository 建立並設為 public
+4. ✅ README.md 已開始撰寫，完成了 Practice 1-2 和 1-3 的心得
 
-1. **Complete Problem Statement** - Copy the exact wording from the exercise, character-for-character
-2. **Mathematical Expressions** - Use LaTeX format with proper escaping (double backslashes: `\\`)
-3. **Implementation Code** - Working solution with detailed comments
-4. **Run Results** - Actual output included as multi-line string at the end
-5. **Key Insights** - 10+ bullet points summarizing important findings
+### 待完成工作
+需要在 README.md 中繼續撰寫剩餘 13 個練習的心得：
+- Practice 2-1, 2-2
+- Practice 3-1, 3-2, 3-3, 3-4, 3-5, 3-6
+- Practice 4-1, 4-2
+- Practice 5-1, 5-2, 5-3
+- Practice 6-1
+- Practice 7-1
 
-### File Structure Template
+## 工作指引
 
+### 步驟 1：理解任務
+每個練習都需要撰寫一份深入的心得，展現對 DSP 概念的理解。這不是單純的程式說明，而是要展現學習過程中的思考和領悟。
+
+### 步驟 2：心得撰寫格式
+每個練習的心得必須包含以下段落：
+
+```markdown
+### Practice X-Y: [中文標題] [English Title]
+
+**題目說明**  
+[簡潔說明練習要求，1-2句話]
+
+**實作重點**
+1. **[重點一]**：[說明]
+2. **[重點二]**：[說明]
+3. **[重點三]**：[說明]
+4. **[重點四]**：[說明]（如有需要）
+
+**程式實作技巧**
 ```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-"""
-******************************************************************
-[Practice X-Y] Complete problem statement exactly as written...
-******************************************************************
-
-Complete Problem Statement:
-[Expanded description]
-
-Mathematical Expression (LaTeX):
-H(z) = \\frac{1 - z^{-1}}{1 - 0.8z^{-1}}
-
-Note: [Any clarifications about missing figures or assumptions]
-"""
-
-# Implementation code here...
-
-# Analysis and visualization...
-
-print("Results...")
-
-"""
-==================== RUN RESULTS ====================
-[Actual output from running the code]
-
-KEY INSIGHTS:
-1. [First key insight]
-2. [Second key insight]
-...
-10. [Tenth key insight]
-
-The plots demonstrate:
-- [What the visualizations show]
-==================== END OF RESULTS ====================
-"""
+# 展示最關鍵的程式碼片段
+# 通常是解決問題的核心邏輯
 ```
 
-## Completed Work (10 files)
+**學習心得**
 
-### Lab 1-3:
-- ✅ `practice_1_2.py` - Discrete sinc function x[n] = sin(ωn)/(πn)
-- ✅ `practice_1_3.py` - Two-tone signal sampling (10Hz + 30Hz)
+[這是最重要的部分，需要 4-5 段深入的個人理解和感想。要展現：
+- 對理論概念的理解
+- 實作過程中的發現
+- 理論與實務的連結
+- 個人的學習收穫]
 
-### Lab 2:
-- ✅ `practice_2_1.py` - Manual convolution implementation
-- ✅ `practice_2_2.py` - Matrix multiplication convolution (n % 5, n % 4)
+![Practice X-Y Description](image/pr-X-Y.png)
+[如果有多張圖，都要加入]
 
-### Lab 3:
-- ✅ `practice_3_1.py` - DTFT without exp(), abs(), angle()
-- ✅ `practice_3_2.py` - 10-pt vs 100-pt DFT comparison
-- ✅ `practice_3_3.py` - FFT implementation
-- ✅ `practice_3_4.py` - FFT of two-tone signal
-- ✅ `practice_3_5.py` - Aliasing demonstration (fs=50Hz)
-- ✅ `practice_3_6.py` - Circular convolution DFT
+**結果與討論**
 
-### Lab 4:
-- ✅ `practice_4_1.py` - Filtering vs convolution (IIR system)
-- ✅ `practice_4_2.py` - Compensating system design (unstable result)
+[分析實驗結果，通常包含：
+1. 數據觀察
+2. 理論驗證
+3. 實務應用思考]
 
-## Remaining Work
-
-### Lab 5:
-**[Practice 5-1]** Perform ↑4 and then ↓3 of an audio signal without using the Matlab functions. Plot the spectrogram of the resulting signal.
-
-**[Practice 5-2]** Generate a music with melody: So Mi Mi Fa Re Re Do Re Mi Fa So So So ; So Mi Mi Fa Re Re Do Mi So So Do, via Matlab function sound.m at sampling frequency of 8000Hz.
-
-**[Practice 5-3]** Use Adobe Audition® to de-vocal a stereo music by subtracting its left-channel signal from right-channel signal.
-
-### Lab 6:
-**[Practice 6-1]** Design a Chebyshev lowpass digital filter using Matlab function upsample.m to perform upsampling of the signal in Example 6-2 by a factor 2. Sketch the resulting waveform and spectrogram.
-
-### Lab 7:
-**[Practice 7-1]** Replace the median filter in Example 7-1 by a moving average filter and show the enhanced image.
-
-## Technical Instructions
-
-### Directory Structure
-All files go in: `/Users/linyanyu/Desktop/10-19-Academic/11-Current-Semester/11.03-數位處理實習/DSP-Python-Exercises/`
-
-### Running Files
-Use uv package manager with required dependencies:
-```bash
-uv run --with numpy --with matplotlib --with scipy python "practice_X_Y.py"
+---
 ```
 
-### Common Issues and Solutions
+### 步驟 3：具體執行流程
 
-1. **stem() plot parameters**: Don't use `alpha` or `markersize` directly. Instead:
-   ```python
-   markerline, stemlines, baseline = plt.stem(x, y)
-   markerline.set_markersize(8)
-   stemlines.set_alpha(0.7)
+1. **讀取練習檔案**
+   ```bash
+   # 使用 Read tool 讀取對應的 practice_X_Y.py
    ```
 
-2. **LaTeX in docstrings**: Always use double backslashes
-   - Wrong: `\sin(\omega n)`
-   - Right: `\\sin(\\omega n)`
+2. **理解程式內容**
+   - 仔細閱讀題目說明
+   - 理解數學公式
+   - 分析程式邏輯
+   - 查看 KEY INSIGHTS
 
-3. **Missing figures**: When exercises reference figures not provided, create reasonable test signals:
-   - Use rectangular pulses, impulses, sine waves
-   - Document assumptions clearly
+3. **查看圖片**
+   - 確認 image/ 資料夾中對應的圖片
+   - 理解圖形展示的內容
 
-4. **Audio/Image files**: For practices requiring external files:
-   - Generate synthetic test data
-   - Note that real files aren't available
-   - Implement the algorithm anyway
+4. **撰寫心得**
+   - 使用 Edit tool 在 README.md 適當位置加入心得
+   - 保持與已完成部分的風格一致
 
-## Implementation Notes for Remaining Exercises
+5. **提交更新**
+   ```bash
+   git add README.md
+   git commit -m "Add Practice X-Y reflection (心得)"
+   git push
+   ```
 
-### Practice 5-1 (Upsampling/Downsampling):
-- ↑4 means upsampling by 4 (insert 3 zeros between samples)
-- ↓3 means downsampling by 3 (keep every 3rd sample)
-- Need to implement anti-aliasing filters
-- Use STFT for spectrogram without matplotlib's specgram
+### 步驟 4：撰寫要點
 
-### Practice 5-2 (Music Generation):
-- Note frequencies: Do=261.63Hz, Re=293.66Hz, Mi=329.63Hz, Fa=349.23Hz, Sol=392Hz
-- Use numpy to generate sine waves
-- Save with scipy.io.wavfile.write instead of Matlab's sound()
+1. **深度思考**：不要只描述程式做了什麼，要說明「為什麼」和「學到什麼」
+2. **個人觀點**：使用第一人稱，展現個人的學習歷程
+3. **理論連結**：將實作結果連結回 DSP 理論
+4. **實務應用**：思考這個技術在實際應用中的意義
 
-### Practice 5-3 (De-vocal):
-- Note: Can't actually use Adobe Audition in Python
-- Simulate with synthetic stereo signal
-- Implement: `devocal = right_channel - left_channel`
+## 範例參考
 
-### Practice 6-1 (Chebyshev Filter):
-- Use scipy.signal.cheby1 for filter design
-- Implement upsampling manually (not with upsample.m)
-- Show frequency response and time-domain effects
+請參考 README.md 中已完成的 Practice 1-2 和 1-3，注意：
+- 心得的深度和個人化
+- 技術細節的準確性
+- 中英文專業術語的使用
+- 圖片的適當引用
 
-### Practice 7-1 (Image Filtering):
-- Generate synthetic noisy image
-- Implement both median and moving average filters
-- Compare results visually
+## 重要提醒
 
-## Context for 心得 Generation
+1. **時間壓力**：需要在週四前完成，請有效率地工作
+2. **品質要求**：這是會被評分的作業，品質很重要
+3. **一次一個**：每完成一個練習就 commit，不要累積太多再提交
+4. **保持風格**：維持與已完成部分一致的撰寫風格
 
-When another Claude reads these files to generate 心得, they should focus on:
-1. Understanding of the mathematical concepts
-2. Implementation challenges and solutions
-3. Comparison with theoretical expectations
-4. Practical applications of the techniques
-5. Personal learning insights
+## 開始工作
 
-Each 心得 should be thoughtful and demonstrate deep understanding of the DSP concepts.
+請從 Practice 2-1 開始，依序完成每個練習的心得。記得每個心得都要展現出對該 DSP 概念的深入理解。
 
-## Final Notes
+祝你順利完成任務！如果遇到任何問題，可以參考已完成的範例或查看原始程式碼中的註解。
 
-- Arthur is an electronics major at NTUT
-- These are for his Thursday DSP lab report
-- Quality is important - these will be graded
-- The exercises progress from basic DSP concepts to advanced applications
-- Some exercises (like 5-3) may need creative interpretation since we can't use external software
+---
 
-Good luck with the remaining implementations!
+## 快速指令參考
+
+```bash
+# 查看特定練習
+Read practice_2_1.py
+
+# 編輯 README
+Edit README.md
+
+# 查看圖片清單
+LS image/
+
+# 提交更新
+git add README.md && git commit -m "Add Practice 2-1 reflection" && git push
+```
