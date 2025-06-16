@@ -55,3 +55,6 @@ uv.lock
 # Local development
 .env
 .env.local
+
+# Documentation/Notes
+HANDOVER.md
