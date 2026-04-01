@@ -6,7 +6,7 @@
 
 This project contains all practice exercises and implementation solutions for the Digital Signal Processing Lab course. Each exercise is implemented in Python with detailed comments and visualization results.
 
-**學生 Student**: 林晏宇 Arthur Lin  
+**學生 Student**: Yan-Yu-Lin  
 **課程 Course**: 數位訊號處理實習 Digital Signal Processing Lab  
 **學期 Semester**: 113-1
 
